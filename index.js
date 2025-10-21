@@ -75,7 +75,8 @@ module.exports = plugin(function({ addComponents, addBase, theme }) {
       captionSide: 'bottom',
       display: 'table-caption',
       outlineOffset: '-1px',
-      padding: '.6em'
+      padding: '.6em',
+      textAlign: 'center'
     },
   })
 });
