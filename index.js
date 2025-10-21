@@ -70,7 +70,7 @@ module.exports = plugin(function({ addComponents, addBase, theme }) {
       marginLeft: 'auto',
       marginRight: '0',
     },
-    '.prose .image>figcaption': {
+    '.prose .image > figcaption': {
       backgroundColor: theme('colors.gray.100'),
       captionSide: 'bottom',
       display: 'table-caption',
