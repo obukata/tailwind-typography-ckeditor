@@ -1,4 +1,3 @@
-# tailwind-typography-ckeditor
 # @obukata/tailwind-typography-ckeditor
 
 TailwindCSS 4系用の Typography 拡張プラグインです。
