@@ -9,25 +9,12 @@ CKEditor で出力された記事コンテンツ向けにスタイルを統一�
 
 - Tailwind Typography の拡張
 - CKEditor で生成された記事コンテンツに最適化
-- blockquote / table / a / figure.table のスタイルを統一
-- フォントサイズを `--scaling` カスタムプロパティで動的に変更可能
 
-### 主なスタイル
-
-| セレクタ | 説明 |
-|----------|------|
-| `.prose blockquote p::before/::after` | 擬似要素を削除 |
-| `.prose a` | 青文字、hover時に下線なし |
-| `.prose figure.table` | display: block |
-| `.prose table th/td` | padding, border, th背景色など調整 |
-| `.prose` | `font-size: calc(1rem * var(--scaling))` に対応 |
-
----
 
 ## インストール
 
 ```bash
-npm install @obukata/tailwind-typography-ckeditor
+npm i -D @obukata/tailwind-typography-ckeditor
 ```
 
 ## TailwindCSS 4系での使用例
@@ -44,12 +31,11 @@ CSS内で @plugin として読み込むだけで CKEditor 用スタイルが適�
 
 * TailwindCSS 4系 / PostCSS 経由でビルドされる環境で使用してください
 * 他のプラグインやユーティリティとの競合に注意してください
-* フォントサイズのスケーリングには --scaling カスタムプロパティを記事コンテンツに設定してください
 
 ## 例
 
 ```html
-<div class="prose" style="--scaling:1.2;">
+<div class="prose">
   <h1>記事タイトル</h1>
   <p>本文テキスト...</p>
   <blockquote>
