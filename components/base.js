@@ -1,6 +1,8 @@
 // prose全体のスタイル
-module.exports = {
-  '.prose': {
-    fontSize: '1em',
-  },
+module.exports = function({ theme } ) {
+  return {
+    '.prose': {
+      fontSize: '1em',
+    },
+  }
 }
