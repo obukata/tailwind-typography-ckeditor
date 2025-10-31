@@ -3,6 +3,9 @@
   "version": "1.1.5",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "build": "postcss standalone/_postcss/tailwind-typography-ckeditor.css -o standalone/styles/tailwind-typography-ckeditor.css"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://obukata@github.com/obukata/tailwind-typography-ckeditor.git"
@@ -15,6 +18,11 @@
   "homepage": "https://github.com/obukata/tailwind-typography-ckeditor#readme",
   "description": "CKEditor向けにTailwind Typographyを拡張するパッケージ",
   "devDependencies": {
+    "@obukata/tailwind-typography-ckeditor": "^1.1.5",
+    "@tailwindcss/postcss": "^4.1.16",
+    "@tailwindcss/typography": "^0.5.19",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
     "tailwindcss": "^4.1.15"
   }
 }

@@ -1,0 +1,8 @@
+
+.tailwindcss {
+  :where(&) {
+    @import "tailwindcss";
+  }
+}
+@plugin "@tailwindcss/typography";
+@plugin "@obukata/tailwind-typography-ckeditor";
