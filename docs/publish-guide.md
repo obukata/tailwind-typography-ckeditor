@@ -103,7 +103,7 @@ npm publish --access public
 公開が成功したら以下で確認：
 
 ```bash
-npm info your-package-name
+npm info @obukata/tailwind-typography-ckeditor
 ```
 
 またはブラウザで
