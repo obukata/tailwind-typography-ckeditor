@@ -4,6 +4,7 @@ module.exports = function({ theme } ) {
     '.prose .image': {
       clear: 'both',
       display: 'table',
+      marginInline: 'auto',
     },
     '.prose .image.image-style-align-left': {
       float: 'left',
