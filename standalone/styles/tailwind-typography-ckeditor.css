@@ -166,13 +166,11 @@
       .collapse {
         visibility: collapse;
       }
-      .absolute {
-        position: absolute;
-      }
       .image {
         .prose & {
           clear: both;
           display: table;
+          margin-inline: auto;
         }
         .prose &.image-style-align-left {
           float: left;
@@ -203,6 +201,7 @@
         & .image {
           clear: both;
           display: table;
+          margin-inline: auto;
         }
         & .image.image-style-align-left {
           float: left;
@@ -689,9 +688,6 @@
       .block {
         display: block;
       }
-      .inline {
-        display: inline;
-      }
       .table {
         display: table;
       }
@@ -720,9 +716,6 @@
             text-decoration: none;
           }
         }
-      }
-      .underline {
-        text-decoration-line: underline;
       }
       .prose {
         & blockquote p::before {
