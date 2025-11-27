@@ -4,5 +4,10 @@ module.exports = function({ theme } ) {
     '.prose': {
       fontSize: '1em',
     },
+    '.prose::after': {
+      content: '',
+      display: 'table',
+      clear: 'both',
+    }
   }
 }

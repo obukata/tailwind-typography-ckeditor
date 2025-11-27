@@ -6,6 +6,9 @@ module.exports = function({ theme } ) {
       display: 'table',
       marginInline: 'auto',
     },
+    '.prose .image.image-style-align-left, .prose .image.image-style-align-right': {
+      clear: 'none',
+    },
     '.prose .image.image-style-align-left': {
       float: 'left',
       marginRight: theme('spacing.6'),

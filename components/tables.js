@@ -3,6 +3,7 @@ module.exports = function({ theme } ) {
   return {
     '.prose figure.table': {
       display: 'block',
+      maxWidth: '100%'
     },
     '.prose table': {
       width: '100%',
