@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "postcss standalone/_postcss/tailwind-typography-ckeditor.css -o standalone/styles/tailwind-typography-ckeditor.css"
+    "build": "postcss ./_postcss/tailwind-typography-ckeditor.css -o ./styles/tailwind-typography-ckeditor.css"
   },
   "repository": {
     "type": "git",

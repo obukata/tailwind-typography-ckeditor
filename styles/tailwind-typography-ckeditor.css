@@ -173,6 +173,12 @@
           margin-inline: auto;
         }
         .prose &.image-style-align-left {
+          clear: none;
+        }
+        .prose &.image-style-align-right {
+          clear: none;
+        }
+        .prose &.image-style-align-left {
           float: left;
           margin-right: 1.5rem;
         }
@@ -204,6 +210,12 @@
           margin-inline: auto;
         }
         & .image.image-style-align-left {
+          clear: none;
+        }
+        & .image.image-style-align-right {
+          clear: none;
+        }
+        & .image.image-style-align-left {
           float: left;
           margin-right: 1.5rem;
         }
@@ -230,14 +242,34 @@
       }
       .image-style-align-left {
         .prose .image& {
+          clear: none;
+        }
+        .prose .image& {
           float: left;
           margin-right: 1.5rem;
         }
       }
       .image-style-align-right {
         .prose .image& {
+          clear: none;
+        }
+        .prose .image& {
           float: right;
           margin-left: 1.5rem;
+        }
+      }
+      .prose {
+        font-size: 1em;
+        &::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        & img {
+          display: inline-block;
+        }
+        & strong {
+          color: inherit;
         }
       }
       .prose {
@@ -670,6 +702,7 @@
       .prose {
         & figure.table {
           display: block;
+          max-width: 100%;
         }
         & table {
           width: 100%;
@@ -685,16 +718,20 @@
           border: 1px solid oklch(92.8% 0.006 264.531);
         }
       }
-      .block {
-        display: block;
-      }
-      .table {
-        display: table;
-      }
       .table {
         .prose figure& {
           display: block;
+          max-width: 100%;
         }
+      }
+      .block {
+        display: block;
+      }
+      .inline-block {
+        display: inline-block;
+      }
+      .table {
+        display: table;
       }
       .table-caption {
         display: table-caption;
@@ -705,9 +742,6 @@
       }
       .p-2 {
         padding: calc(var(--spacing) * 2);
-      }
-      .prose {
-        font-size: 1em;
       }
       .prose {
         & a {

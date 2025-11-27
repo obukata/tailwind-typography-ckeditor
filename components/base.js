@@ -8,6 +8,12 @@ module.exports = function({ theme } ) {
       content: '""',
       display: 'table',
       clear: 'both',
+    },
+    '.prose img': {
+      display: 'inline-block'
+    },
+    '.prose strong': {
+      color: 'inherit'
     }
   }
 }
