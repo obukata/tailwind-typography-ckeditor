@@ -5,7 +5,7 @@ module.exports = function({ theme } ) {
       fontSize: '1em',
     },
     '.prose::after': {
-      content: '',
+      content: '""',
       display: 'table',
       clear: 'both',
     }
